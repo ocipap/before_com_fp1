@@ -1,0 +1,16 @@
+<script src="./papico.js"></script>
+
+<script>
+  const {
+    log
+  } = console
+</script>
+<script>
+  const add = (a, b) => a + b
+  const delay1000 = v => new Promise(resolve => {
+    console.log(v)
+    setTimeout(_ => resolve(v), 1000)
+  })
+
+  map(a => delay1000(a * a), [1, 2, 3, 4, 5])
+</script>
